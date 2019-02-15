@@ -1,5 +1,5 @@
 pipeline {
-	agent { any }
+	agent  any 
     parameters {
         booleanParam(name: 'INFRA',  defaultValue: false, description: 'Force build and push infrastructure')
     }
