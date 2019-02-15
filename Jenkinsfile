@@ -2,8 +2,8 @@ pipeline {
     parameters {
         booleanParam(name: 'INFRA',  defaultValue: false, description: 'Force build and push infrastructure')
     }
-    environment {
-    }
+//    environment {
+//    }
     stages {
         stage("Infrastructure Images") {
             when {
