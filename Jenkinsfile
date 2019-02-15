@@ -16,7 +16,7 @@ pipeline {
             steps {
                 dir ('infrastructure') {
 			sh ' echo changed'
-                }
+
 		    def changeLogSets = currentBuild.changeSets
 			for (int i = 0; i < changeLogSets.size(); i++) {
     				def entries = changeLogSets[i].items
@@ -30,7 +30,7 @@ pipeline {
         				}
     				}
 			}
-
+                }
             }
         }
     }
